@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Noticia de prensa">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#071d3a"/><stop offset="1" stop-color="#174a76"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <rect x="265" y="145" width="670" height="385" rx="24" fill="#faf8f4"/>
+  <rect x="330" y="215" width="360" height="28" rx="14" fill="#c8a15a"/>
+  <rect x="330" y="280" width="540" height="18" rx="9" fill="#9aa5b1"/>
+  <rect x="330" y="325" width="470" height="18" rx="9" fill="#c4cad0"/>
+  <rect x="330" y="370" width="520" height="18" rx="9" fill="#c4cad0"/>
+  <rect x="330" y="430" width="210" height="32" rx="16" fill="#071d3a"/>
+  <text x="600" y="610" fill="#c8a15a" font-family="Arial, sans-serif" font-size="34" text-anchor="middle" letter-spacing="8">EN PRENSA</text>
+</svg>

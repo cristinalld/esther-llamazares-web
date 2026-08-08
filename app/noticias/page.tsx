@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Newspaper } from "lucide-react";
-import { news } from "@/data/news";
+import { ArrowUpRight, Newspaper } from "lucide-react";
 import { press } from "@/data/press";
 
 export default function NoticiasPage() {
@@ -28,64 +27,8 @@ export default function NoticiasPage() {
 
       </section>
 
-      {/* Listado */}
-      <section className="mx-auto mt-20 max-w-7xl px-8">
-
-        <div className="space-y-10">
-
-          {news.map((item) => (
-
-            <Link
-              key={item.slug}
-              href={`/noticias/${item.slug}`}
-              className="group flex flex-col overflow-hidden rounded-[32px] bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl lg:flex-row"
-            >
-
-              <div className="relative h-72 lg:h-auto lg:w-[420px]">
-
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover transition duration-700 group-hover:scale-105"
-                />
-
-              </div>
-
-              <div className="flex flex-1 flex-col justify-center p-10">
-
-                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#C8A15A]">
-                  {item.date}
-                </p>
-
-                <h2 className="mt-4 font-serif text-4xl text-[#071D3A] transition group-hover:text-[#C8A15A]">
-                  {item.title}
-                </h2>
-
-                <p className="mt-5 text-lg leading-8 text-[#5B6673]">
-                  {item.excerpt}
-                </p>
-
-                <div className="mt-8 flex items-center gap-3 font-semibold uppercase tracking-[0.15em] text-[#071D3A] group-hover:text-[#C8A15A]">
-
-                  Leer noticia
-
-                  <ArrowRight size={18} />
-
-                </div>
-
-              </div>
-
-            </Link>
-
-          ))}
-
-        </div>
-
-      </section>
-
-      <section className="mx-auto mt-24 max-w-7xl px-8">
-        <div className="mb-12 border-t border-[#D9D0C1] pt-16 text-center">
+      <section className="mx-auto mt-16 max-w-7xl px-8">
+        <div className="mb-12 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#C8A15A]">
             Esther en los medios
           </p>

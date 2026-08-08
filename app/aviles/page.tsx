@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/sitePath";
 import Image from "next/image";
 import {
   ShoppingBag,
@@ -16,7 +17,7 @@ export default function AvilesPage() {
         <div className="relative overflow-hidden rounded-[40px]">
 
           <Image
-            src="/images/aviles/hero.jpg"
+            src={sitePath("/images/aviles/hero.jpg")}
             alt="Esther Llamazares en Avilés"
             width={1600}
             height={900}

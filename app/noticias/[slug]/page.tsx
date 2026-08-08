@@ -10,6 +10,11 @@ type Props = {
   }>;
 };
 
+export function generateStaticParams() {
+  return news.map((article) => ({ slug: article.slug }));
+}
+
+export const dynamicParams = false;
 export default async function NewsPage({ params }: Props) {
   const { slug } = await params;
 

@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/sitePath";
 import Image from "next/image";
 import {
   GraduationCap,
@@ -17,7 +18,7 @@ export default function SobreMiPage() {
           {/* Imagen */}
           <div className="relative overflow-hidden rounded-3xl shadow-xl">
             <Image
-              src="/images/sobre-mi/esther.webp"
+              src={sitePath("/images/sobre-mi/esther.webp")}
               alt="Esther Llamazares"
               width={700}
               height={900}

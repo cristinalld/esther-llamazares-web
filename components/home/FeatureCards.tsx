@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/sitePath";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -11,21 +12,21 @@ const cards = [
   {
     title: "En Avilés",
     text: "Trabajando cada día por una ciudad mejor.",
-    image: "/images/aviles.webp",
+    image: sitePath("/images/aviles.webp"),
     href: "/aviles",
     icon: Building2,
   },
   {
     title: "En el Congreso",
     text: "Defendiendo a Asturias donde se toman las decisiones.",
-    image: "/images/congreso.webp",
+    image: sitePath("/images/congreso.webp"),
     href: "/congreso",
     icon: Landmark,
   },
   {
     title: "Escuchar",
     text: "La política empieza escuchando a la gente.",
-    image: "/images/escuchar.webp",
+    image: sitePath("/images/escuchar.webp"),
     href: "/escuchar",
     icon: Users,
   },

@@ -1,4 +1,6 @@
+import { sitePath } from "@/lib/sitePath";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -9,7 +11,7 @@ export default function About() {
           {/* Foto */}
           <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] shadow-2xl">
             <Image
-              src="/images/about.jpg"        // ← Correcto ahora
+              src={sitePath("/images/about.jpg")}
               alt="Esther Llamazares"
               width={650}
               height={720}
@@ -39,9 +41,9 @@ export default function About() {
 
             <p className="text-3xl font-serif text-[#C8A15A] italic">Esther Llamazares</p>
 
-            <a href="/sobre-mi" className="inline-flex items-center gap-3 text-[#071D3A] font-medium hover:text-[#C8A15A] transition-colors text-lg">
+            <Link href="/sobre-mi" className="inline-flex items-center gap-3 text-[#071D3A] font-medium hover:text-[#C8A15A] transition-colors text-lg">
               CONÓCEME MEJOR →
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/sitePath";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -7,7 +8,7 @@ export default function Hero() {
     <section className="relative min-h-[calc(100svh-120px)] overflow-hidden bg-[#F8F6F2] lg:min-h-[calc(100svh-136px)]">
       <div className="absolute inset-y-0 right-20 w-[62%] overflow-hidden">
         <Image
-          src="/images/hero2.png"
+          src={sitePath("/images/hero2.png")}
           alt="Esther Llamazares"
           fill
           preload

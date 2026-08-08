@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/sitePath";
 import Image from "next/image";
 export default function CongresoPage() {
   return (
@@ -6,7 +7,7 @@ export default function CongresoPage() {
       <section className="mx-auto max-w-[1700px] px-8 lg:px-14">
         <div className="relative overflow-hidden rounded-[42px] shadow-xl">
           <Image
-            src="/images/congreso/hero1.png"
+            src={sitePath("/images/congreso/hero1.png")}
             alt="Esther Llamazares en el Congreso"
             width={1800}
             height={1000}
@@ -73,7 +74,7 @@ export default function CongresoPage() {
             {/* Tarjeta 1 */}
             <article className="w-[420px] overflow-hidden rounded-3xl border border-[#E8E4DA] bg-white shadow-sm transition-all duration-300 hover:shadow-xl">
               <video controls preload="metadata" className="aspect-video w-full bg-black">
-                <source src="/videos/congreso/industria.mp4" type="video/mp4" />
+                <source src={sitePath("/videos/congreso/industria.mp4")} type="video/mp4" />
               </video>
               <div className="p-8">
                 <span className="inline-flex rounded-full bg-[#F3EEE3] px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-[#C8A15A]">
@@ -92,7 +93,7 @@ export default function CongresoPage() {
             {/* Tarjeta 2 */}
             <article className="w-[420px] overflow-hidden rounded-3xl border border-[#E8E4DA] bg-white shadow-sm transition-all duration-300 hover:shadow-xl">
               <video controls preload="metadata" className="aspect-video w-full bg-black">
-                <source src="/videos/congreso/cambio_climatico.mp4" type="video/mp4" />
+                <source src={sitePath("/videos/congreso/cambio_climatico.mp4")} type="video/mp4" />
               </video>
               <div className="p-8">
                 <span className="inline-flex rounded-full bg-[#F3EEE3] px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-[#C8A15A]">
@@ -111,7 +112,7 @@ export default function CongresoPage() {
             {/* Tarjeta 3 */}
             <article className="w-[420px] overflow-hidden rounded-3xl border border-[#E8E4DA] bg-white shadow-sm transition-all duration-300 hover:shadow-xl">
               <video controls preload="metadata" className="aspect-video w-full bg-black">
-                <source src="/videos/congreso/quimica_farmaceutica.mp4" type="video/mp4" />
+                <source src={sitePath("/videos/congreso/quimica_farmaceutica.mp4")} type="video/mp4" />
               </video>
               <div className="p-8">
                 <span className="inline-flex rounded-full bg-[#F3EEE3] px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-[#C8A15A]">

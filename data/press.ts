@@ -11,7 +11,7 @@ type AutoPressItem = {
   url: string;
 };
 
-const approvedPress = autoPress as AutoPressItem[];
+export const approvedPress = autoPress as AutoPressItem[];
 const manualPress = [
   {
     id: 1,

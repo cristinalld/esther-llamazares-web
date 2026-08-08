@@ -1,5 +1,18 @@
 import { sitePath } from "@/lib/sitePath";
-export const press = [
+import autoPress from "@/data/press-auto.json";
+type AutoPressItem = {
+  id: string;
+  medio: string;
+  fecha: string;
+  publishedAt: string;
+  titular: string;
+  resumen: string;
+  imagen: string;
+  url: string;
+};
+
+const approvedPress = autoPress as AutoPressItem[];
+const manualPress = [
   {
     id: 1,
     medio: "La Voz de Asturias",
@@ -47,4 +60,12 @@ export const press = [
     imagen: sitePath("/images/prensa/migijon.jpg"),
     url: "https://migijon.com/esther-llamazares-pp-no-se-en-que-no-ha-mentido-sanchez-es-el-peor-presidente-de-espana/",
   },
+];
+
+export const press = [
+  ...approvedPress.map((item) => ({
+    ...item,
+    imagen: sitePath(item.imagen),
+  })),
+  ...manualPress,
 ];

@@ -61,3 +61,29 @@
   .chat-dialog{height:100svh}
   .chat-dialog .dialog-head{flex-basis:58px;height:58px;padding:8px 14px}
 }
+
+/* Espaciado amplio para el juego integrado */
+@media (min-width:761px) {
+  .topbar { height:76px; padding-inline:30px; }
+  .brand { gap:16px; }
+  .brand img { width:50px; height:50px; }
+  .brand strong { font-size:26px; }
+  .brand small { font-size:13px; }
+  .level-pill, .icon-button { height:48px; }
+  .icon-button { width:48px; }
+  #app { height:calc(100vh - 76px); padding:8px 28px 94px; }
+  .home { max-width:1280px; }
+  .hero { height:230px; }
+  .speech { top:22px; width:68%; height:auto; min-height:126px; padding:22px 32px; }
+  .speech h1 { margin:5px 0; font-size:31px; }
+  .speech p { font-size:14px; }
+  .esther-wrap { right:0; bottom:-355px; width:270px; height:680px; }
+  .esther-wrap img { height:680px; }
+  .cards { height:270px; gap:18px; transform:none; }
+  .activity-card { width:240px; height:270px; padding:20px; }
+  .activity-card .icon { width:48px; height:48px; font-size:23px; }
+  .activity-card h2 { font-size:20px; }
+  .activity-card p { font-size:14px; }
+  .activity-card .cta { height:50px; font-size:16px; }
+  .progress-dock { width:min(690px,calc(100% - 24px)); height:72px; padding:8px 24px; }
+}

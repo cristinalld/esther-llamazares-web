@@ -8,12 +8,12 @@ export const metadata: Metadata = {
 
 export default function RetoAutonomosPage() {
   return (
-    <section className="bg-[#071D3A]" aria-labelledby="reto-title">
+    <section className="game-page bg-[#071D3A]" aria-labelledby="reto-title">
       <h1 id="reto-title" className="sr-only">Reto Autónomos</h1>
       <iframe
         src={sitePath("/juego-autonomos/index.html")}
         title="Reto Autónomos: aprende jugando con Esther"
-        className="block h-[calc(100svh-120px)] w-full border-0 lg:h-[calc(100svh-136px)]"
+        className="block h-[calc(100svh-64px)] w-full border-0 lg:h-[calc(100svh-80px)]"
         allow="clipboard-read; clipboard-write"
       />
     </section>

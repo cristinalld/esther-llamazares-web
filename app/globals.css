@@ -55,3 +55,12 @@ button {
 
 img { max-width: 100%; }
 :focus-visible { outline: 3px solid #c8a15a; outline-offset: 4px; }
+
+/* El juego utiliza toda la altura disponible y no muestra el banner social. */
+body:has(.game-page) > main {
+  padding-bottom: 0;
+}
+
+body:has(.game-page) > footer {
+  display: none;
+}

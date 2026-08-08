@@ -13,7 +13,7 @@ export default function RetoAutonomosPage() {
       <iframe
         src={sitePath("/juego-autonomos/index.html")}
         title="Reto Autónomos: aprende jugando con Esther"
-        className="block h-[calc(100svh-120px)] w-full border-0 sm:h-[760px] lg:h-[max(800px,calc(100svh-136px))]"
+        className="block h-[calc(100svh-120px)] w-full border-0 lg:h-[calc(100svh-136px)]"
         allow="clipboard-read; clipboard-write"
       />
     </section>

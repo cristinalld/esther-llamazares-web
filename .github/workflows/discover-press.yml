@@ -14,5 +14,5 @@ jobs:
       - name: Buscar menciones y crear propuestas
         run: node scripts/discover-press.mjs
         env:
-          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MAX_NEW: "5"

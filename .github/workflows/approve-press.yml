@@ -21,12 +21,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/press-auto.json
-          git commit -m "Publica noticia aprobada #\${{ github.event.issue.number }}"
+          git commit -m "Publica noticia aprobada #${{ github.event.issue.number }}"
           git push
       - name: Cerrar la propuesta
         env:
-          GH_TOKEN: \${{ secrets.GITHUB_TOKEN }}
-          ISSUE_URL: \${{ github.event.issue.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
         run: |
           gh issue edit "$ISSUE_URL" --remove-label "prensa-pendiente" --add-label "prensa-publicada"
           gh issue comment "$ISSUE_URL" --body "Noticia incorporada. La web se actualizará en unos minutos."

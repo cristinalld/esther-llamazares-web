@@ -1,6 +1,6 @@
 # Aprobación de noticias
 
-Cada mañana GitHub busca noticias recientes sobre Esther Llamazares.
+Cada mañana GitHub busca noticias sobre Esther Llamazares publicadas desde el 1 de enero de 2026.
 
 ## Aprobar
 

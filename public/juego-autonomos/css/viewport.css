@@ -85,5 +85,9 @@
   .activity-card h2 { font-size:20px; }
   .activity-card p { font-size:14px; }
   .activity-card .cta { height:50px; font-size:16px; }
-  .progress-dock { width:min(690px,calc(100% - 24px)); height:72px; padding:8px 24px; }
+  .progress-dock { width:min(560px,calc(100% - 32px)); height:56px; padding:5px 14px; gap:12px; }
+  .progress-dock > div:first-child, .progress-dock > div:nth-child(3), .progress-dock button { min-width:62px; }
+  .progress-dock strong { font-size:14px; }
+  .progress-dock span { font-size:9px; }
+  .dock-bar { height:7px; }
 }

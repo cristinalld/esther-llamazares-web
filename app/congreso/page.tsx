@@ -15,15 +15,15 @@ export default function CongresoPage() {
             className="h-[700px] w-full object-cover object-[74%_center] brightness-105"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#071D3A]/95 via-[#071D3A]/72 via-40% to-transparent" />
-          <div className="absolute left-10 top-1/2 max-w-xl -translate-y-1/2 lg:left-16">
-            <p className="text-sm font-semibold uppercase tracking-[0.45em] text-[#C8A15A]">
+          <div className="absolute left-5 right-5 top-1/2 max-w-xl sm:left-10 sm:right-10 -translate-y-1/2 lg:left-16">
+            <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] sm:tracking-[0.45em] text-[#C8A15A]">
               CONGRESO DE LOS DIPUTADOS
             </p>
-            <h1 className="mt-6 font-serif text-7xl leading-none text-white lg:text-8xl">
+            <h1 className="mt-6 font-serif text-5xl sm:text-7xl leading-none text-white lg:text-8xl">
               En el<br />Congreso
             </h1>
             <div className="mt-8 h-[2px] w-20 rounded-full bg-[#C8A15A]" />
-            <p className="mt-8 max-w-lg text-xl leading-10 text-white/90">
+            <p className="mt-8 max-w-lg text-base leading-7 sm:text-xl sm:leading-10 text-white/90">
               Diputada por Asturias en el Congreso de los Diputados,
               trabajando para defender los intereses de nuestra comunidad
               autónoma y contribuyendo a que la voz de Asturias esté presente
@@ -35,10 +35,10 @@ export default function CongresoPage() {
       {/* INTRODUCCIÓN */}
       <section className="mt-24">
         <div className="mx-auto max-w-3xl px-8 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.45em] text-[#C8A15A]">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] sm:tracking-[0.45em] text-[#C8A15A]">
             ACTIVIDAD PARLAMENTARIA
           </p>
-          <h2 className="mt-6 font-serif text-6xl leading-tight text-[#071D3A]">
+          <h2 className="mt-6 font-serif text-4xl sm:text-6xl leading-tight text-[#071D3A]">
             Defendiendo Asturias
           </h2>
           <div className="mx-auto mt-8 h-[2px] w-20 rounded-full bg-[#C8A15A]" />
@@ -54,10 +54,10 @@ export default function CongresoPage() {
       {/* VÍDEOS DESTACADOS */}
       <section className="mt-24">
         <div className="mx-auto max-w-3xl px-8 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.45em] text-[#C8A15A]">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] sm:tracking-[0.45em] text-[#C8A15A]">
             INTERVENCIONES
           </p>
-          <h2 className="mt-5 font-serif text-6xl text-[#071D3A]">
+          <h2 className="mt-5 font-serif text-4xl sm:text-6xl text-[#071D3A]">
             Intervenciones destacadas
           </h2>
           <div className="mx-auto mt-6 h-[2px] w-20 rounded-full bg-[#C8A15A]" />
@@ -69,11 +69,11 @@ export default function CongresoPage() {
 
         {/* Grid de tarjetas */}
         <div className="mt-16 flex justify-center px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid w-full max-w-[1324px] grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             
             {/* Tarjeta 1 */}
-            <article className="w-[420px] overflow-hidden rounded-3xl border border-[#E8E4DA] bg-white shadow-sm transition-all duration-300 hover:shadow-xl">
-              <video controls preload="metadata" className="aspect-video w-full bg-black">
+            <article className="min-w-0 w-full overflow-hidden rounded-3xl border border-[#E8E4DA] bg-white shadow-sm transition-all duration-300 hover:shadow-xl">
+              <video controls playsInline preload="metadata" className="aspect-video w-full bg-black">
                 <source src={sitePath("/videos/congreso/industria.mp4")} type="video/mp4" />
               </video>
               <div className="p-8">
@@ -91,8 +91,8 @@ export default function CongresoPage() {
             </article>
 
             {/* Tarjeta 2 */}
-            <article className="w-[420px] overflow-hidden rounded-3xl border border-[#E8E4DA] bg-white shadow-sm transition-all duration-300 hover:shadow-xl">
-              <video controls preload="metadata" className="aspect-video w-full bg-black">
+            <article className="min-w-0 w-full overflow-hidden rounded-3xl border border-[#E8E4DA] bg-white shadow-sm transition-all duration-300 hover:shadow-xl">
+              <video controls playsInline preload="metadata" className="aspect-video w-full bg-black">
                 <source src={sitePath("/videos/congreso/cambio_climatico.mp4")} type="video/mp4" />
               </video>
               <div className="p-8">
@@ -110,8 +110,8 @@ export default function CongresoPage() {
             </article>
 
             {/* Tarjeta 3 */}
-            <article className="w-[420px] overflow-hidden rounded-3xl border border-[#E8E4DA] bg-white shadow-sm transition-all duration-300 hover:shadow-xl">
-              <video controls preload="metadata" className="aspect-video w-full bg-black">
+            <article className="min-w-0 w-full overflow-hidden rounded-3xl border border-[#E8E4DA] bg-white shadow-sm transition-all duration-300 hover:shadow-xl">
+              <video controls playsInline preload="metadata" className="aspect-video w-full bg-black">
                 <source src={sitePath("/videos/congreso/quimica_farmaceutica.mp4")} type="video/mp4" />
               </video>
               <div className="p-8">

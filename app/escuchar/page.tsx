@@ -9,7 +9,7 @@ export default function EscucharPage() {
           ESCUCHAR
         </p>
 
-        <h1 className="mt-6 font-serif text-6xl leading-tight text-[#071D3A]">
+        <h1 className="mt-6 font-serif text-4xl sm:text-6xl leading-tight text-[#071D3A]">
           Tu voz cuenta
         </h1>
 
@@ -30,7 +30,7 @@ export default function EscucharPage() {
         <div className="grid gap-10 lg:grid-cols-3">
 
           {/* Propuestas */}
-          <article className="rounded-[32px] bg-white p-10 shadow-lg">
+          <article className="rounded-[32px] bg-white p-6 sm:p-10 shadow-lg">
 
             <div className="text-5xl">💡</div>
 
@@ -46,7 +46,7 @@ export default function EscucharPage() {
           </article>
 
           {/* Problemas */}
-          <article className="rounded-[32px] bg-white p-10 shadow-lg">
+          <article className="rounded-[32px] bg-white p-6 sm:p-10 shadow-lg">
 
             <div className="text-5xl">📍</div>
 
@@ -62,7 +62,7 @@ export default function EscucharPage() {
           </article>
 
           {/* Reuniones */}
-          <article className="rounded-[32px] bg-white p-10 shadow-lg">
+          <article className="rounded-[32px] bg-white p-6 sm:p-10 shadow-lg">
 
             <div className="text-5xl">🤝</div>
 
@@ -83,7 +83,7 @@ export default function EscucharPage() {
           {/* FORMULARIO */}
       <section className="mx-auto mt-28 max-w-5xl px-8">
 
-        <div className="rounded-[40px] bg-white p-12 shadow-xl">
+        <div className="rounded-[40px] bg-white p-6 sm:p-12 shadow-xl">
 
           <div className="text-center">
 
@@ -91,7 +91,7 @@ export default function EscucharPage() {
               PARTICIPA
             </p>
 
-            <h2 className="mt-5 font-serif text-5xl text-[#071D3A]">
+            <h2 className="mt-5 font-serif text-3xl sm:text-5xl text-[#071D3A]">
               Envíame tu propuesta
             </h2>
 
@@ -104,17 +104,18 @@ export default function EscucharPage() {
 
           </div>
 
-          <form className="mt-14 space-y-8">
+          <p role="status" className="mt-10 rounded-2xl bg-[#F3EEE3] p-5 text-center leading-7 text-[#071D3A]">El envío de propuestas todavía no está disponible. Estamos preparando este canal de contacto.</p>
+          <fieldset disabled className="mt-8 space-y-8 opacity-60">
 
             <div className="grid gap-8 md:grid-cols-2">
 
               <div>
 
-                <label className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
+                <label htmlFor="nombre" className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
                   Nombre y apellidos
                 </label>
 
-                <input
+                <input id="nombre"
                   type="text"
                   className="w-full rounded-2xl border border-[#DDD6CA] px-6 py-4 outline-none transition focus:border-[#C8A15A]"
                 />
@@ -123,11 +124,11 @@ export default function EscucharPage() {
 
               <div>
 
-                <label className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
+                <label htmlFor="correo" className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
                   Correo electrónico
                 </label>
 
-                <input
+                <input id="correo"
                   type="email"
                   className="w-full rounded-2xl border border-[#DDD6CA] px-6 py-4 outline-none transition focus:border-[#C8A15A]"
                 />
@@ -140,11 +141,11 @@ export default function EscucharPage() {
 
               <div>
 
-                <label className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
+                <label htmlFor="municipio" className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
                   Municipio
                 </label>
 
-                <input
+                <input id="municipio"
                   type="text"
                   className="w-full rounded-2xl border border-[#DDD6CA] px-6 py-4 outline-none transition focus:border-[#C8A15A]"
                 />
@@ -153,11 +154,11 @@ export default function EscucharPage() {
 
               <div>
 
-                <label className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
+                <label htmlFor="asunto" className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
                   Asunto
                 </label>
 
-                <input
+                <input id="asunto"
                   type="text"
                   className="w-full rounded-2xl border border-[#DDD6CA] px-6 py-4 outline-none transition focus:border-[#C8A15A]"
                 />
@@ -168,11 +169,11 @@ export default function EscucharPage() {
 
             <div>
 
-              <label className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
+              <label htmlFor="mensaje" className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
                 Mensaje
               </label>
 
-              <textarea
+              <textarea id="mensaje"
                 rows={7}
                 className="w-full rounded-2xl border border-[#DDD6CA] px-6 py-5 outline-none transition focus:border-[#C8A15A]"
               />
@@ -182,15 +183,15 @@ export default function EscucharPage() {
             <div className="pt-4 text-center">
 
               <button
-                type="submit"
+                type="button"
                 className="rounded-full bg-[#C8A15A] px-10 py-4 font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#071D3A]"
               >
-                Enviar propuesta
+                Envío no disponible
               </button>
 
             </div>
 
-          </form>
+          </fieldset>
 
         </div>
 

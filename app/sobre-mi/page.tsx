@@ -13,7 +13,7 @@ export default function SobreMiPage() {
       <div className="mx-auto max-w-[1500px] px-8 lg:px-16">
 
         {/* Cabecera */}
-        <div className="grid items-center gap-20 lg:grid-cols-2">
+        <div className="grid items-center gap-10 lg:gap-20 lg:grid-cols-2">
 
           {/* Imagen */}
           <div className="relative overflow-hidden rounded-3xl shadow-xl">
@@ -28,13 +28,13 @@ export default function SobreMiPage() {
           </div>
 
           {/* Texto */}
-          <div>
+          <div className="min-w-0">
 
             <p className="text-sm font-semibold uppercase tracking-[0.30em] text-[#C8A15A]">
               Sobre mí
             </p>
 
-            <h1 className="mt-4 font-serif text-6xl leading-tight text-[#071D3A]">
+            <h1 className="mt-4 font-serif text-4xl sm:text-6xl leading-tight text-[#071D3A]">
               Compromiso, gestión y cercanía
             </h1>
 
@@ -78,7 +78,7 @@ export default function SobreMiPage() {
               Trayectoria
             </p>
 
-            <h2 className="mt-4 font-serif text-5xl text-[#071D3A]">
+            <h2 className="mt-4 font-serif text-3xl sm:text-5xl text-[#071D3A]">
               Experiencia profesional e institucional
             </h2>
 
@@ -87,7 +87,7 @@ export default function SobreMiPage() {
           <div className="mx-auto mt-20 grid max-w-7xl gap-8 md:grid-cols-2 xl:grid-cols-4">
 
             {/* Formación */}
-            <div className="flex flex-col rounded-3xl border border-[#ECE7DD] bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div className="flex flex-col rounded-3xl border border-[#ECE7DD] bg-white p-6 sm:p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
               <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-[#C8A15A]/10">
                 <GraduationCap
@@ -109,7 +109,7 @@ export default function SobreMiPage() {
             </div>
 
             {/* Empresa */}
-            <div className="flex flex-col rounded-3xl border border-[#ECE7DD] bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div className="flex flex-col rounded-3xl border border-[#ECE7DD] bg-white p-6 sm:p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
               <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-[#C8A15A]/10">
                 <BriefcaseBusiness
@@ -130,7 +130,7 @@ export default function SobreMiPage() {
             </div>
 
             {/* Avilés */}
-            <div className="flex flex-col rounded-3xl border border-[#ECE7DD] bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div className="flex flex-col rounded-3xl border border-[#ECE7DD] bg-white p-6 sm:p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
               <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-[#C8A15A]/10">
                 <Building2
@@ -151,7 +151,7 @@ export default function SobreMiPage() {
             </div>
 
             {/* Congreso */}
-            <div className="flex flex-col rounded-3xl border border-[#ECE7DD] bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div className="flex flex-col rounded-3xl border border-[#ECE7DD] bg-white p-6 sm:p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
 
               <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-[#C8A15A]/10">
                 <Landmark

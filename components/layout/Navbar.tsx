@@ -43,7 +43,7 @@ export default function Navbar() {
         </button>
       </div>
       {open && (
-        <nav className="border-t border-[#ECE7DD] bg-white px-5 py-5 shadow-xl lg:hidden" aria-label="Navegación móvil">
+        <nav className="max-h-[calc(100svh-64px)] overflow-y-auto border-t border-[#ECE7DD] bg-white px-5 py-5 shadow-xl lg:hidden" aria-label="Navegación móvil">
           <ul className="mx-auto grid max-w-[1540px] gap-1">
             {menu.map((item) => (
               <li key={item.href}><Link href={item.href} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener noreferrer" : undefined} onClick={() => setOpen(false)} className={`block rounded-xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.12em] ${pathname === item.href ? "bg-[#F3EEE3] text-[#071D3A]" : "text-[#4B5563] hover:bg-[#F8F6F2]"}`}>{item.label}</Link></li>

@@ -25,9 +25,9 @@ export default function Trabajo() {
             Actividad
           </p>
 
-          <h2 className="mt-4 font-serif text-6xl text-[#071D3A]">
+          <h1 className="mt-4 font-serif text-6xl text-[#071D3A]">
             Trabajo
-          </h2>
+          </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-9 text-[#5B6673]">
             Toda la actividad institucional y parlamentaria organizada
@@ -44,7 +44,7 @@ export default function Trabajo() {
               <Link
                 key={item.id}
                 href={item.enlace}
-                className="group flex min-h-[460px] flex-col rounded-3xl border border-[#E8E1D5] bg-white p-10 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                className="group flex min-w-0 min-h-[460px] flex-col rounded-3xl border border-[#E8E1D5] bg-white p-6 sm:p-10 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
                 {/* Icono */}
                 <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#C8A15A]/10 transition group-hover:bg-[#C8A15A]/20">
@@ -55,7 +55,7 @@ export default function Trabajo() {
                 </div>
 
                 {/* Título */}
-                <h3 className="mt-8 text-center font-serif text-[2.8rem] leading-tight text-[#071D3A] transition group-hover:text-[#C8A15A]">
+                <h3 className="mt-8 text-center font-serif text-3xl sm:text-[2.8rem] leading-tight text-[#071D3A] transition group-hover:text-[#C8A15A]">
                   {item.titulo}
                 </h3>
 

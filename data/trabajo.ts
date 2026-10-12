@@ -5,7 +5,7 @@ export const trabajo = [
     descripcion:
       "Iniciativas parlamentarias, preguntas al Gobierno, intervenciones y actividad desarrollada en el Congreso.",
     icono: "building",
-    enlace: "/en-el-congreso",
+    enlace: "/congreso",
   },
   {
     id: 2,
@@ -13,14 +13,14 @@ export const trabajo = [
     descripcion:
       "Reuniones con colectivos, visitas institucionales y trabajo sobre el terreno en Asturias.",
     icono: "map",
-    enlace: "/en-aviles",
+    enlace: "/aviles",
   },
   {
     id: 3,
-    titulo: "Documentos",
+    titulo: "Noticias",
     descripcion:
-      "Notas de prensa, documentos de trabajo e intervenciones disponibles para consulta.",
+      "Noticias y notas de prensa sobre la actividad institucional.",
     icono: "file",
-    enlace: "/documentos",
+    enlace: "/noticias",
   },
 ];

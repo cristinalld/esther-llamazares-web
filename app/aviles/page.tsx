@@ -27,17 +27,17 @@ export default function AvilesPage() {
 
           <div className="absolute inset-0 bg-gradient-to-r from-[#071D3A]/45 via-[#071D3A]/15 to-transparent" />
 
-          <div className="absolute left-16 top-1/2 max-w-2xl -translate-y-1/2">
+          <div className="absolute left-5 right-5 top-1/2 max-w-2xl sm:left-10 sm:right-10 lg:left-16 -translate-y-1/2">
 
-            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#C8A15A]">
+            <p className="text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.35em] text-[#C8A15A]">
               Ayuntamiento de Avilés
             </p>
 
-            <h1 className="mt-6 font-serif text-7xl leading-tight text-white">
+            <h1 className="mt-6 font-serif text-5xl sm:text-7xl leading-tight text-white">
               En Avilés
             </h1>
 
-            <p className="mt-8 text-2xl leading-10 text-white/90">
+            <p className="mt-8 text-base leading-7 sm:text-2xl sm:leading-10 text-white/90">
               Portavoz del Partido Popular en el Ayuntamiento de Avilés,
               trabajando cada día para construir una ciudad con más
               oportunidades, mejor gestionada y más cercana a los vecinos.
@@ -54,11 +54,11 @@ export default function AvilesPage() {
 
         <div className="mx-auto max-w-6xl text-center">
 
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#C8A15A]">
+          <p className="text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.35em] text-[#C8A15A]">
             COMPROMISO CON AVILÉS
           </p>
 
-          <h2 className="mt-3 font-serif text-6xl text-[#071D3A]">
+          <h2 className="mt-3 font-serif text-4xl sm:text-6xl text-[#071D3A]">
             Compromisos con Avilés
           </h2>
 

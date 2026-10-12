@@ -17,8 +17,8 @@ export default function Hero() {
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#F8F6F2] via-[#F8F6F2]/55 to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-[68%] bg-gradient-to-r from-[#F8F6F2] via-[#F8F6F2]/90 to-transparent" />
+      <div className="absolute inset-y-0 left-0 w-full bg-gradient-to-r from-[#F8F6F2] via-[#F8F6F2]/55 to-transparent sm:w-[78%] sm:via-[#F8F6F2]/25" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-[68%] sm:w-[60%] bg-gradient-to-r from-[#F8F6F2] via-[#F8F6F2]/90 to-transparent" />
       <div className="relative z-10 mx-auto flex min-h-[calc(100svh-120px)] w-full max-w-[1540px] items-start px-6 pb-16 pt-14 sm:px-10 lg:min-h-[calc(100svh-136px)] lg:items-center lg:px-16 lg:py-12 xl:px-24">
         <div className="max-w-[570px]">
           <p className="mb-4 text-[13px] font-semibold uppercase leading-6 tracking-[0.28em] text-[#C8A15A] sm:text-[14px]">
@@ -43,3 +43,4 @@ export default function Hero() {
     </section>
   );
 }
+

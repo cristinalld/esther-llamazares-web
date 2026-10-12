@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative min-h-[calc(100svh-120px)] overflow-hidden bg-[#F8F6F2] lg:min-h-[calc(100svh-136px)]">
       <div className="absolute inset-0 overflow-hidden">
         <Image
-          src={sitePath("/images/hero2.png")}
+          src={sitePath("/images/esther-congreso-portada.png")}
           alt="Esther Llamazares"
           fill
           preload

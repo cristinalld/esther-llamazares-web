@@ -13,7 +13,7 @@ const menu = [
   { label: "En Avilés", href: "/aviles" },
   { label: "En el Congreso", href: "/congreso" },
   { label: "Noticias", href: "/noticias" },
-  { label: "Agua de Avilés", href: "/agenda" },
+  { label: "Agua de Avilés", href: "/agua-de-aviles" },
   { label: "Iniciativas", href: "https://www.congreso.es/es/busqueda-de-diputados?p_p_id=diputadomodule&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_diputadomodule_mostrarFicha=true&codParlamentario=340&idLegislatura=XV&mostrarAgenda=false", external: true },
 ];
 
@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 max-w-[1540px] items-center justify-between px-5 sm:px-8 lg:h-20 lg:px-10">
         <div className="w-[190px] shrink-0"><Logo /></div>
         <nav className="hidden flex-1 justify-end lg:flex" aria-label="Navegación principal">
-          <ul className="flex items-center gap-2 xl:gap-3 2xl:gap-5">
+          <ul className="flex items-center gap-3 xl:gap-6 2xl:gap-8">
             {menu.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener noreferrer" : undefined}
@@ -54,4 +54,5 @@ export default function Navbar() {
     </header>
   );
 }
+
 

@@ -104,94 +104,14 @@ export default function EscucharPage() {
 
           </div>
 
-          <p role="status" className="mt-10 rounded-2xl bg-[#F3EEE3] p-5 text-center leading-7 text-[#071D3A]">El envío de propuestas todavía no está disponible. Estamos preparando este canal de contacto.</p>
-          <fieldset disabled className="mt-8 space-y-8 opacity-60">
-
-            <div className="grid gap-8 md:grid-cols-2">
-
-              <div>
-
-                <label htmlFor="nombre" className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
-                  Nombre y apellidos
-                </label>
-
-                <input id="nombre"
-                  type="text"
-                  className="w-full rounded-2xl border border-[#DDD6CA] px-6 py-4 outline-none transition focus:border-[#C8A15A]"
-                />
-
-              </div>
-
-              <div>
-
-                <label htmlFor="correo" className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
-                  Correo electrónico
-                </label>
-
-                <input id="correo"
-                  type="email"
-                  className="w-full rounded-2xl border border-[#DDD6CA] px-6 py-4 outline-none transition focus:border-[#C8A15A]"
-                />
-
-              </div>
-
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-2">
-
-              <div>
-
-                <label htmlFor="municipio" className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
-                  Municipio
-                </label>
-
-                <input id="municipio"
-                  type="text"
-                  className="w-full rounded-2xl border border-[#DDD6CA] px-6 py-4 outline-none transition focus:border-[#C8A15A]"
-                />
-
-              </div>
-
-              <div>
-
-                <label htmlFor="asunto" className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
-                  Asunto
-                </label>
-
-                <input id="asunto"
-                  type="text"
-                  className="w-full rounded-2xl border border-[#DDD6CA] px-6 py-4 outline-none transition focus:border-[#C8A15A]"
-                />
-
-              </div>
-
-            </div>
-
-            <div>
-
-              <label htmlFor="mensaje" className="mb-3 block text-sm font-semibold uppercase tracking-[0.15em] text-[#071D3A]">
-                Mensaje
-              </label>
-
-              <textarea id="mensaje"
-                rows={7}
-                className="w-full rounded-2xl border border-[#DDD6CA] px-6 py-5 outline-none transition focus:border-[#C8A15A]"
-              />
-
-            </div>
-
-            <div className="pt-4 text-center">
-
-              <button
-                type="button"
-                className="rounded-full bg-[#C8A15A] px-10 py-4 font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#071D3A]"
-              >
-                Envío no disponible
-              </button>
-
-            </div>
-
-          </fieldset>
+          <iframe
+            src="https://esther-contacto.netlify.app/"
+            title="Formulario de preguntas y propuestas para Esther"
+            className="mt-10 block h-[1100px] w-full border-0 sm:h-[820px]"
+          />
+          <p className="mt-4 text-center text-sm text-[#5B6673]">
+            <a href="https://esther-contacto.netlify.app/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">Abrir el formulario en otra pestaña</a>
+          </p>
 
         </div>
 

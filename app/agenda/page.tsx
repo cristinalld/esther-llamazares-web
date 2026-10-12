@@ -1,96 +1,44 @@
-export default function AgendaPage() {
-  const eventos = [
-    {
-      fecha: "15 JUL",
-      titulo: "Reunión con asociaciones vecinales",
-      lugar: "Avilés",
-      hora: "18:00",
-      descripcion:
-        "Encuentro con representantes vecinales para conocer sus propuestas y necesidades.",
-    },
-    {
-      fecha: "18 JUL",
-      titulo: "Visita institucional al Congreso",
-      lugar: "Madrid",
-      hora: "10:30",
-      descripcion:
-        "Jornada de trabajo en el Congreso de los Diputados con reuniones institucionales.",
-    },
-    {
-      fecha: "22 JUL",
-      titulo: "Encuentro con empresarios",
-      lugar: "Oviedo",
-      hora: "12:00",
-      descripcion:
-        "Reunión con representantes del tejido empresarial asturiano.",
-    },
-  ];
+import type { Metadata } from "next";
+import { Droplets, MessageCircle, ExternalLink } from "lucide-react";
 
+export const metadata: Metadata = {
+  title: "Agua de Avilés | Esther Llamazares",
+  description: "Descubre la historia del contrato del agua de Avilés y pregunta al bot de Esther.",
+};
+const gameUrl = "https://crislld.github.io/historia-contrato-agua-aviles/";
+const botUrl = "https://esther-guia-pro.base44.app/";
+
+export default function AguaPage() {
   return (
-    <main className="bg-[#F8F6F2] pt-32 pb-32">
-      <section className="mx-auto max-w-6xl px-8">
-
+    <section className="bg-[#F8F6F2] px-5 py-12 sm:px-8 lg:py-16" aria-labelledby="agua-title">
+      <div className="mx-auto max-w-6xl">
         <div className="text-center">
-
-          <p className="text-sm font-semibold uppercase tracking-[0.45em] text-[#C8A15A]">
-            AGENDA
-          </p>
-
-          <h1 className="mt-6 font-serif text-6xl text-[#071D3A]">
-            Próximos actos
-          </h1>
-
-          <div className="mx-auto mt-8 h-[2px] w-20 bg-[#C8A15A]" />
-
-          <p className="mx-auto mt-10 max-w-3xl text-xl leading-9 text-[#5B6673]">
-            Consulta los próximos encuentros, visitas institucionales,
-            reuniones y actos públicos.
-          </p>
-
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C8A15A]">Aprende y pregunta con Esther</p>
+          <h1 id="agua-title" className="mt-5 font-serif text-4xl text-[#071D3A] sm:text-6xl">El agua de Avilés</h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#5B6673]">Conoce la historia del contrato del agua paso a paso y resuelve tus dudas con el bot de Esther.</p>
         </div>
-
-        <div className="mt-20 space-y-8">
-
-          {eventos.map((evento, index) => (
-
-            <article
-              key={index}
-              className="rounded-[30px] bg-white p-10 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
-            >
-              <div className="grid gap-8 md:grid-cols-[140px_1fr]">
-
-                <div className="flex items-center justify-center rounded-2xl bg-[#071D3A] py-8 text-center">
-
-                  <span className="font-serif text-4xl text-white">
-                    {evento.fecha}
-                  </span>
-
-                </div>
-
-                <div>
-
-                  <h2 className="font-serif text-4xl text-[#071D3A]">
-                    {evento.titulo}
-                  </h2>
-
-                  <p className="mt-4 text-lg font-medium text-[#C8A15A]">
-                    📍 {evento.lugar} &nbsp;&nbsp; • &nbsp;&nbsp; 🕒 {evento.hora}
-                  </p>
-
-                  <p className="mt-6 text-lg leading-8 text-[#5B6673]">
-                    {evento.descripcion}
-                  </p>
-
-                </div>
-
-              </div>
-            </article>
-
-          ))}
-
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <a href="#juego-agua" className="rounded-3xl border border-[#ECE7DD] bg-white p-7 shadow-sm transition hover:border-[#C8A15A]">
+            <Droplets className="text-[#C8A15A]" size={30} aria-hidden="true" />
+            <h2 className="mt-4 font-serif text-3xl text-[#071D3A]">Descubre la historia</h2>
+            <p className="mt-3 leading-7 text-[#5B6673]">Recorre el juego interactivo sobre el contrato del agua de Avilés.</p>
+            <span className="mt-5 inline-block font-semibold text-[#071D3A]">Ir al juego ↓</span>
+          </a>
+          <div className="rounded-3xl bg-[#071D3A] p-7 text-white shadow-sm">
+            <MessageCircle className="text-[#D8BC84]" size={30} aria-hidden="true" />
+            <h2 className="mt-4 font-serif text-3xl">Pregunta a Esther</h2>
+            <p className="mt-3 leading-7 text-[#E3E8EF]">Abre el bot de Esther y escribe tu pregunta para seguir aprendiendo.</p>
+            <a href={botUrl} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-full bg-[#C8A15A] px-6 py-3 font-semibold text-[#071D3A]">Abrir el bot <ExternalLink size={16} aria-hidden="true" /><span className="sr-only"> (se abre en una nueva pestaña)</span></a>
+          </div>
         </div>
-
-      </section>
-    </main>
+        <section id="juego-agua" className="mt-12 scroll-mt-24" aria-labelledby="juego-title">
+          <div className="mb-5 flex flex-wrap items-center justify-between gap-4">
+            <h2 id="juego-title" className="font-serif text-3xl text-[#071D3A]">Historia del contrato del agua</h2>
+            <a href={gameUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#071D3A]">Abrir el juego en otra pestaña <ExternalLink size={16} aria-hidden="true" /></a>
+          </div>
+          <iframe src={gameUrl} title="Juego interactivo: historia del contrato del agua de Avilés" className="block h-[85svh] min-h-[600px] w-full rounded-3xl border border-[#ECE7DD] bg-white shadow-sm" />
+        </section>
+      </div>
+    </section>
   );
 }

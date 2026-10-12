@@ -13,8 +13,7 @@ const menu = [
   { label: "En Avilés", href: "/aviles" },
   { label: "En el Congreso", href: "/congreso" },
   { label: "Noticias", href: "/noticias" },
-  { label: "Reto Autónomos", href: "/reto-autonomos" },
-  { label: "Agenda", href: "/agenda" },
+  { label: "Agua de Avilés", href: "/agenda" },
   { label: "Iniciativas", href: "https://www.congreso.es/es/busqueda-de-diputados?p_p_id=diputadomodule&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_diputadomodule_mostrarFicha=true&codParlamentario=340&idLegislatura=XV&mostrarAgenda=false", external: true },
 ];
 

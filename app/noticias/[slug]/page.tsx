@@ -51,7 +51,7 @@ export default async function NewsPage({ params }: Props) {
         </div>
 
         {/* Título */}
-        <h1 className="mt-6 font-serif text-[3.8rem] leading-[1.05] text-[#071D3A]">
+        <h1 className="mt-6 font-serif text-4xl sm:text-[3.8rem] leading-[1.05] text-[#071D3A]">
           {article.title}
         </h1>
 
@@ -61,7 +61,7 @@ export default async function NewsPage({ params }: Props) {
         </p>
 
         {/* Imagen */}
-        <div className="relative mt-14 h-[560px] overflow-hidden rounded-3xl shadow-xl">
+        <div className="relative mt-14 h-[280px] sm:h-[560px] overflow-hidden rounded-3xl shadow-xl">
           <Image
             src={article.image}
             alt={article.title}
@@ -76,20 +76,7 @@ export default async function NewsPage({ params }: Props) {
         <div className="mt-16 space-y-8 text-[20px] leading-10 text-[#3F4A56]">
           <p>{article.content}</p>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque vitae urna sit amet arcu cursus dignissim.
-            Suspendisse potenti. Vivamus at purus vel velit tincidunt
-            convallis. Sed ut perspiciatis unde omnis iste natus error
-            sit voluptatem accusantium doloremque laudantium.
-          </p>
 
-          <p>
-            Donec accumsan, sapien non malesuada luctus, purus neque
-            fermentum justo, vel volutpat ligula sem sed libero.
-            Curabitur feugiat elit non purus porta, in condimentum
-            mauris aliquam.
-          </p>
         </div>
 
         {/* Navegación */}
@@ -110,7 +97,7 @@ export default async function NewsPage({ params }: Props) {
                   size={20}
                 />
 
-                <span className="font-serif text-2xl text-[#071D3A] group-hover:text-[#C8A15A]">
+                <span className="min-w-0 break-words font-serif text-2xl text-[#071D3A] group-hover:text-[#C8A15A]">
                   {previous.title}
                 </span>
               </div>
@@ -129,7 +116,7 @@ export default async function NewsPage({ params }: Props) {
               </p>
 
               <div className="flex items-center justify-end gap-3">
-                <span className="font-serif text-2xl text-[#071D3A] group-hover:text-[#C8A15A]">
+                <span className="min-w-0 break-words font-serif text-2xl text-[#071D3A] group-hover:text-[#C8A15A]">
                   {next.title}
                 </span>
 

@@ -26,11 +26,11 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 max-w-[1540px] items-center justify-between px-5 sm:px-8 lg:h-20 lg:px-10">
         <div className="w-[190px] shrink-0"><Logo /></div>
         <nav className="hidden flex-1 justify-end lg:flex" aria-label="Navegación principal">
-          <ul className="flex items-center gap-2.5 xl:gap-5 2xl:gap-8">
+          <ul className="flex items-center gap-2 xl:gap-3 2xl:gap-5">
             {menu.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener noreferrer" : undefined}
-                  className={`group relative whitespace-nowrap pb-2 text-[10px] font-semibold uppercase tracking-[0.1em] xl:text-[12px] xl:tracking-[0.13em] transition ${pathname === item.href ? "text-[#071D3A]" : "text-[#4B5563] hover:text-[#C8A15A]"}`}>
+                  className={`group relative whitespace-nowrap pb-2 text-[12px] font-semibold uppercase tracking-[0.06em] xl:text-[14px] 2xl:text-[16px] transition ${pathname === item.href ? "text-[#071D3A]" : "text-[#4B5563] hover:text-[#C8A15A]"}`}>
                   {item.label}
                   <span className={`absolute bottom-0 left-0 h-[2px] bg-[#C8A15A] transition-all duration-300 ${pathname === item.href ? "w-full" : "w-0 group-hover:w-full"}`} />
                 </Link>
@@ -54,3 +54,4 @@ export default function Navbar() {
     </header>
   );
 }
+

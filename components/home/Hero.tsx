@@ -1,7 +1,7 @@
 import { sitePath } from "@/lib/sitePath";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -30,9 +30,14 @@ export default function Hero() {
           <p className="mt-6 max-w-[430px] text-[17px] leading-8 text-[#3F4A56] sm:text-[18px]">
             Compromiso, diálogo y trabajo<br className="hidden sm:block" /> para construir futuro.
           </p>
-          <Link href="/trabajo" className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#C8A15A] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-lg shadow-[#C8A15A]/20 transition duration-300 hover:bg-[#071D3A] sm:mt-9 sm:px-8 sm:py-4 sm:text-sm">
+          <div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-9">
+          <Link href="/trabajo" className=" inline-flex items-center gap-3 rounded-full bg-[#C8A15A] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] text-white shadow-lg shadow-[#C8A15A]/20 transition duration-300 hover:bg-[#071D3A] sm:px-8 sm:py-4 sm:text-sm">
             Conocer mi trabajo <ArrowRight size={18} />
           </Link>
+          <Link href="/escuchar#contacto" className="inline-flex min-h-11 items-center gap-2 rounded-full border border-[#C8A15A] bg-white/90 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.12em] text-[#071D3A] transition hover:bg-[#F3EEE3] sm:py-4 sm:text-sm">
+            <MessageCircle size={18} aria-hidden="true" /> Escríbeme
+          </Link>
+          </div>
         </div>
       </div>
     </section>

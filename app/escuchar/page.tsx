@@ -81,7 +81,7 @@ export default function EscucharPage() {
 
       </section>
           {/* FORMULARIO */}
-      <section className="mx-auto mt-28 max-w-5xl px-8">
+      <section id="contacto" className="mx-auto mt-28 max-w-5xl scroll-mt-24 px-5 sm:px-8">
 
         <div className="rounded-[40px] bg-white p-6 sm:p-12 shadow-xl">
 
